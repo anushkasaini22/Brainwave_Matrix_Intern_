@@ -85,7 +85,7 @@ plt.title('Negative Reviews')
 plt.tight_layout()
 plt.show()
 
-ef predict_sentiment(rating=None, comment=None):
+def predict_sentiment(rating=None, comment=None):
     """Predict sentiment from rating or comment"""
     if rating is not None:
         try:
@@ -106,6 +106,10 @@ def interactive_prediction():
     print("Choose option:")
     print("1 - Enter a Comment")
     print("2 - Enter a Rating")
+    print("3 - Random Example from Dataset")
+    print("4 - Quit")
+
+    while True:
 …
 
 choice = input("\nYour choice: ").strip().lower()
@@ -122,6 +126,12 @@ choice = input("\nYour choice: ").strip().lower()
             row = df.sample(1).iloc[0]
             print(f"\nRandom Dataset Example:\nRating: {row['review_rating']}\nComment: {row['review_text']}")
             pred = predict_sentiment(comment=row['review_text'])
+            print(f"Predicted Sentiment: {pred} (1=Positive, 0=Negative)")
+        elif choice == '4':
+            print("Exiting interactive mode.")
+            break
+        else:
+            print("Invalid choice. Please try again.")
   …
  interactive_prediction()
 
