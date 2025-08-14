@@ -100,9 +100,22 @@ Positive sentiment example:
 image : ![Evaluation Accuracy](https://github.com/user-attachments/assets/8425a53a-9018-4065-9831-c1c738c2e358)
 
 
-Input: "Instagram App" → Prediction: Positive (1)
+Input: "Instagram App" → Prediction: Positive (1) 
 
+ # Key Visualizations
+Sentiment Distribution Chart — showing count of positive vs. negative reviews.
+![sentiment distribution](https://github.com/user-attachments/assets/e1eab180-0722-43b7-9338-68ae67dbea90)
+
+
+Word Cloud — highlighting most frequent words in the dataset.
+![word cloud](https://github.com/user-attachments/assets/2ce653cb-84c5-4eb5-90c9-90f097f188e7)
+
+
+Top 10 Words in Positive & Negative Reviews — providing insight into common user opinions.
+positive reviews:
+![top 10 positive](https://github.com/user-attachments/assets/4952626c-5ad8-4453-9a4e-2a99c86731f0)
 Negative sentiment example:
+![negative reviews](https://github.com/user-attachments/assets/7e68fd0a-e7b8-44cb-8f03-ad254cab0494)
 
 Input: "It glitched out... I hate it" → Prediction: Negative (0)
 
