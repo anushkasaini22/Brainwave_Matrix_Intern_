@@ -108,7 +108,7 @@ def interactive_prediction():
     print("2 - Enter a Rating")
 …
 
-[6:11 pm, 14/08/2025] JOO JOO 🍬: choice = input("\nYour choice: ").strip().lower()
+choice = input("\nYour choice: ").strip().lower()
         if choice == '1':
             comment = input("Enter your comment: ")
             result = predict_sentiment(comment=comment)
@@ -123,7 +123,7 @@ def interactive_prediction():
             print(f"\nRandom Dataset Example:\nRating: {row['review_rating']}\nComment: {row['review_text']}")
             pred = predict_sentiment(comment=row['review_text'])
   …
-[6:11 pm, 14/08/2025] JOO JOO 🍬: interactive_prediction()
+ interactive_prediction()
 
 
 
